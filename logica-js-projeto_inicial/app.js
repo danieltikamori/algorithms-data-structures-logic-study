@@ -1,6 +1,6 @@
 alert("Welcome to the Guessing Number Game!");
 
-let secretNumber = 29;
+let secretNumber = Math.floor(Math.random() * 11) // parseInt(Math.random() * 10 +1) also works
 let guessNumber;
 let numAttempts = 1;
 
