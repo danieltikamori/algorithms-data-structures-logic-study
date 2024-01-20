@@ -1,11 +1,11 @@
 alert("Welcome to the Guessing Number Game!");
 
-let secretNumber = Math.floor(Math.random() * 11) // parseInt(Math.random() * 10 +1) also works
+let secretNumber = Math.floor(Math.random() * 101) // parseInt(Math.random() * 10 +1) also works
 let guessNumber;
 let numAttempts = 1;
 
 while (guessNumber != secretNumber) {
-  guessNumber = prompt("Choose a number between 1 to 10");
+  guessNumber = prompt("Choose a number between 1 to 100");
   if (guessNumber == secretNumber) {
     break;
   } else {
