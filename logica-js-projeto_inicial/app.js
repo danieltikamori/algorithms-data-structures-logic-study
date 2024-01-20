@@ -18,8 +18,5 @@ while (guessNumber != secretNumber) {
   }
 }
 
-if (numAttempts > 1) {
-  alert(`You discovered the secret number ${secretNumber} in ${numAttempts} attempts!`);
-} else {
-  alert(`You discovered the secret number ${secretNumber} in ${numAttempts} attempt!`);
-}
+let wordAttempt = numAttempts > 1 ? "attempts" : "attempt";
+  alert(`You discovered the secret number ${secretNumber} in ${numAttempts} ${wordAttempt}!`);
