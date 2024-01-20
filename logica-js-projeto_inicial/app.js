@@ -7,7 +7,7 @@ let numAttempts = 1;
 while (guessNumber != secretNumber) {
   guessNumber = prompt("Choose a number between 1 to 10");
   if (guessNumber == secretNumber) {
-    alert(`You discovered the secret number ${secretNumber} in ${numAttempts} attempts!`);
+    break;
   } else {
     if (guessNumber > secretNumber) {
       alert(`The secret number is lower than ${guessNumber}`);
@@ -16,4 +16,10 @@ while (guessNumber != secretNumber) {
     }
     numAttempts++;
   }
+}
+
+if (numAttempts > 1) {
+  alert(`You discovered the secret number ${secretNumber} in ${numAttempts} attempts!`);
+} else {
+  alert(`You discovered the secret number ${secretNumber} in ${numAttempts} attempt!`);
 }
